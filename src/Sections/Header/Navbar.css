@@ -1,0 +1,150 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgb(244, 249, 251);
+  color: #000000;
+  box-shadow: 0px 15px 10px -15px #e4e2e2;
+  margin-bottom: 0.4rem;
+  height: 6vh;
+}
+
+.second-nav .nav-links a {
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+  text-decoration: none;
+  color: rgb(244, 249, 251);
+}
+.icon {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  cursor: pointer;
+}
+.icon :hover {
+  color: #003057;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-right: 5rem;
+  text-decoration: none;
+  color: #000000;
+  font-size: 30px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.desktop {
+  display: none;
+}
+.line {
+  width: 25px;
+  height: 2px;
+  background-color: #0e0101;
+  margin: 4px;
+  transition-duration: 0.3s;
+}
+
+.line-1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.line-2 {
+  opacity: 0;
+}
+
+.line-3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.options-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
+  height: 40vh;
+  position: absolute;
+  z-index: 9999;
+  background-color: rgb(255, 254, 252);
+}
+.dropdown-division1 {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-division1 a {
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.dropdown-division2 {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-division2 a {
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.hh {
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  .nav-links {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top:3px
+  }
+  .desktop a {
+    padding: 1px;
+    margin-left: 0.6rem;
+    text-decoration: none;
+    color: #003057;
+    font-size: 22px;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .options-dropdown {
+    flex-direction: column;
+  }
+
+  .show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(244, 249, 251);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+ 
+  .show a {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .options-dropdown {
+    display: block;
+  }
+  .dropdown-division2 {
+    margin-top: 0.7rem;
+  }
+}
