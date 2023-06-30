@@ -20,7 +20,6 @@ const SecondSection = () => {
           </div>
         </div>
       </div>
-
     </>
   )
 }

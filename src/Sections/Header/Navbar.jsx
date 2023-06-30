@@ -15,9 +15,8 @@ const Navbar = () => {
 
   return (
     <>
-
       <nav>
-        <div  className="icon">
+        <div className="icon">
           <i onClick={toggleDropdown}><h3>Options</h3></i>
         </div>
         <div className={`nav-links ${showMenu ? 'show' : ''}`}>
@@ -26,8 +25,6 @@ const Navbar = () => {
           <a href='/event'>Ipsum</a>
           <a href='/contactus'>Ipsum</a>
         </div>
-
-
         <div className="hamburger" onClick={handleMenuToggle}>
           <div className={`line ${showMenu ? 'line-1' : ''}`}></div>
           <div className={`line ${showMenu ? 'line-2' : ''}`}></div>
@@ -47,20 +44,17 @@ const Navbar = () => {
             <a href="/">Link</a>
             <a href="/">Link</a>
             <a href="/">Link</a>
-          </div> 
-             {/* style={{border:'2 px solid red',background:'red'}} */}
-          {showMenu &&  <div className="desktop">
-          <a href='/'>Ipsum</a>
-          <a href='/about'>Ipsum</a>
-          <a href='/event'>Ipsum</a>
-          <a href='/contactus'>Ipsum</a>
-        </div> }
+          </div>
+          {showMenu && <div className="desktop">
+            <a href='/'>Ipsum</a>
+            <a href='/about'>Ipsum</a>
+            <a href='/event'>Ipsum</a>
+            <a href='/contactus'>Ipsum</a>
+          </div>}
         </div>
       )}
-      
-        <div>
-
-        </div>
+      <div>
+      </div>
     </>
   )
 }

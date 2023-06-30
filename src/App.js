@@ -6,11 +6,9 @@ import ThirdSection from './Sections/section3/ThirdSection';
 function App() {
   return (
     <>
-        <Navbar />
-      <div className="centriliezer">
-        <SecondSection />
-      </div>
-        <ThirdSection />
+      <Navbar />
+      <SecondSection />
+      <ThirdSection />
     </>
   );
 }

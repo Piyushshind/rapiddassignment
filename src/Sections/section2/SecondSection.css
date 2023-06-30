@@ -33,7 +33,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
- 
 }
 .middle-para p {
   font-size: 18px;
@@ -91,14 +90,13 @@
 }
 
 @media screen and (max-width: 990px) {
-  
   .containt-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
-  .inner-blocks-container{
-    margin-left:auto ;
+  .inner-blocks-container {
+    margin-left: auto;
   }
 }
 
